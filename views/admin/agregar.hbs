@@ -1,0 +1,35 @@
+<div class="container" style="margin:100px">
+    <div class="row">
+        <div class="col-8 offset-2 text-center">
+            <h3>AGREGAR NUEVA NOVEDAD</h3>
+            <form action="/admin/beneficios/agregar" method="post" enctype="multipart/form-data">
+                <div class="form-floating mb-3">
+                    <input type="text" class="form-control"  placeholder="Titulo" name="titulo">
+                    <label>Titulo</label>
+                </div>
+                <div class="form-floating mb-3">
+                    <textarea class="form-control" placeholder="Subtitulo"  name="subtitulo"></textarea>
+                    <label>Subtitulo</label>
+                </div>
+                <div class="form-group py-4 pt-1">
+                    <label>Imagen: <input type="file" class="form-control" name="imagen" id="imagen"></label>
+
+                </div>
+                <div class="form-floating mb-3">
+                    <textarea class="form-control" placeholder="Cuerpo" name="cuerpo"
+                        style="height: 100px" ></textarea>
+                    <label>Cuerpo</label>
+
+                </div>
+                <div class="d-grid gap-2">
+                    <button class="btn  btn-dark" type="submit">GUARDAR</button>
+
+                </div>
+            </form>
+            {{#if error}}
+            <p>{{message}}</p>
+            {{/if}}
+        </div>
+
+    </div>
+</div>

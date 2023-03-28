@@ -1,0 +1,40 @@
+<div class="container" style="margin:50px auto">
+    <div class="row">
+        <div class="col-6 offset-3">
+            <h4>MODIFICAR BENEFICIOS</h4>
+            <form action="/admin/beneficios/modificar" method="post" enctype="multipart/form-data">
+                <input type="hidden" value="{{beneficios.id}}" name="id">
+                <div class="form-group">
+                    <label for="">Titulo</label>
+                    <input type="text" class="form-control" name="titulo" value="{{beneficios.titulo}}">
+
+                </div>
+                <div class="form-group">
+                    <label for="">Subtitulo</label>
+                    <input type="text" class="form-control" name="subtitulo" value="{{beneficios.subtitulo}}">
+
+                </div>
+                <div class="form-group py-2">
+                    <p>
+                        <label>Imagen:<input type="file" name="imagen" id="imagen" / > </label>
+                    </p>
+                    <p>
+                        <label> <input type="checkbox" name="img_delete" id="img_delete" value="1">
+                            eliminar imagen actual</label>
+                        <input type="hidden" name="img_original" value="{{beneficios.img_id}}">
+                    </p>
+                
+                </div>
+                <div class="form-group">
+                    <label for="">Cuerpo</label>
+                    <textarea name="cuerpo" class="form-control">{{beneficios.cuerpo}}</textarea>
+               </div>
+               <button type="submit" class="btn btn-dark">MODIFICAR</button>
+            </form>
+            {{#if error}}
+            <p>{{message}}</p>
+            {{/if}}
+        </div>
+
+    </div>
+</div>

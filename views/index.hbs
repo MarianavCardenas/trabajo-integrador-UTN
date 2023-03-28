@@ -1,0 +1,206 @@
+<div class="conteiner-fluid">
+    <div id="home" class="row aling-items-center hero">
+        <div class="col-lg-3 offset-lg-2">
+            <p class="h3"><em>3 y 6 cuotas sin interes</em> </p>
+            <h1>OFERTAS</h1>
+            <p class="h3"><strong>¡Los decuentos no paran!</strong></p>
+        </div>
+    </div>
+
+</div>
+
+<div class="text-bg-light p-3"></div>
+
+
+<div class="container text-center">
+    <div class="row">
+        <div class="col-6">
+            <div class="conteiner-fluid">
+                <div class="row my-5">
+                    <div id="Novedades" class="col-md-5 ">
+                        <h2>NOVEDADES</h2>
+                        <ul class="lista-novedades list-group list-group-horizontal">
+                            
+                            <li class="py-2"><a href="#"><img src="images/foto-niños.jpg" alt="niños"> Descuentos</a>
+                            </li>
+                          
+
+                            <li class="py-2"><a href="/marcas"><img src="images/foto-mujer.jpg" alt="mujer">Nueva
+                                    coleccion</a></li>
+
+                            <li class="py-2"><a href="nuevosingresos"><img src="images/foto-zapatillas.jpg"
+                                        alt="zapatillas">Nuevos
+                                    Ingresos</a>
+                            </li>
+
+                        </ul>
+
+                    </div>
+
+
+                </div>
+
+            </div>
+
+
+        </div>
+
+
+
+        <div class="col">
+            <div class="col-md-5 offset-md-2 py-5 ">
+                <div class="rounded py-1 testimonios">
+                    <h2 class=" text-center">OPINIONES</h2>
+                    <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <div class="testimonio py-1">
+                                    <h4><em>"Los mejores Descuentos"</em></h4>
+                                    <p> Maria Laura, Canning</p>
+
+                                </div>
+                            </div>
+                            <div class="carousel-item ">
+                                <div class="testimonio py-1">
+                                    <h4><em>"La ropa es espectacular"</em></h4>
+                                    <p> Lucas, Vicente lopez</p>
+
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="testimonio py-1">
+                                    <h4><em> "La primera vez que compro, no me arrepiento"</em></h4>
+                                    <p> Celeste, CABA</p>
+
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+
+    </div>
+
+
+
+    <div class="row ">
+        <div class="col-10">
+            <div class="container text-center">
+                <div class="row my-5 ">
+                    
+                        <h2>BENEFICIOS EXCLUSIVOS</h2>
+                        <ul class="list-group list-group-horizontal lista-novedades ms-1">
+    
+    
+                            {{#each beneficios}}
+                            <li class="list-group-item ">
+                                <a href="javascript:void(0)" data-bs-toggle="modal" data-bs-target="#exampleModal{{id}}"><img src={{imagen}}>
+                                    {{titulo}}
+                                </a>
+                            </li>
+                            {{/each}}
+    
+    
+    
+                        </ul>
+    
+                    
+    
+    
+                </div>
+    
+            </div>
+    
+    
+        </div>
+
+
+    <!-- Modal -->
+    {{#each beneficios}}
+    <div class="modal fade" id="exampleModal{{id}}" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h2 class="modal-title fs-5" id="exampleModalLabel">{{titulo}}</h2>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <img src={{imagen}}>
+                    <h2>{{subtitulo}}</h2>
+                    <p>{{cuerpo}}</p>
+                </div>
+
+
+            </div>
+        </div>
+
+    </div>
+    {{/each}}
+
+
+</div>
+
+
+    <div class="container-fluid">
+        <div class="row justify-content-evenly">
+            <div class="col-9 py-4 ">
+                <h1 class="text-bg-start"><strong> HISTORIA</strong></h1>
+                <p class="fst-italic">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi commodi ipsam
+                    minima eveniet deserunt cupiditate quos, eligendi sequi hic consequatur voluptate blanditiis sit
+                    labore! Accusantium incidunt nihil tempora quasi perspiciatis?</p>
+            </div>
+            <div class="col-4 ms-2 pb-4 py-2"><img src="images/foto2.jpg" alt="mujer haciendo ejercicio"
+                    class="img-fluid">
+            </div>
+            <div class="col-4 ms-4 pb-4 py-2 "><img src="images/foto1.jpg" alt="gente corriendo" class="img-fluid">
+            </div>
+        </div>
+    </div>
+    <div id="conocenos" class="row py-4">
+        <div class="col-md-4 offset-md-1">
+            <h2>Visitanos</h2>
+            <div class="mapa">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3284.2568038763625!2d-58.43605038103565!3d-34.59766721132325!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcca712648c1e9%3A0x1db08ae29b828cfa!2sJuli%C3%A1n%20%C3%81lvarez%20828%2C%20C1414DRR%20CABA!5e0!3m2!1ses-419!2sar!4v1673324851556!5m2!1ses-419!2sar"
+                    width="600" height="350" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+
+            </div>
+
+        </div>
+        <div class="col-md-4 offset-md-1">
+            <h2 class="text-center">Contactenos</h2>
+            <form class="row" action="/" method="post">
+                <div class="col">
+                    <input type="text" class="form-control" placeholder="Nombre" aria-label="Nombre" name="nombre">
+                </div>
+                <div class="col py-2">
+                    <input type="text" class="form-control" placeholder="Apellido" aria-label="Apellido"
+                        name="apellido">
+                </div>
+                <div class="mb-3 py-1">
+                    <input type="telefono" class="form-control" id="exampleFormControlInput1"
+                        placeholder="telefono/celular" name="telefono">
+                </div>
+                <div class="mb-3 py-1">
+                    <input type="email" class="form-control" id="exampleFormControlInput1"
+                        placeholder="Correo Electronico" name="email">
+                </div>
+                <div class="mb-3">
+                    <label for="exampleFormControlTextarea1" class="form-label">Mensaje</label>
+                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" name="mensaje"></textarea>
+                </div>
+                <div class="d-md-block">
+                    <button type="submit" class="btn btn-secondary">Enviar</button>
+                </div>
+
+            </form>
+            <p>{{message}}</p>
+
+
+        </div>

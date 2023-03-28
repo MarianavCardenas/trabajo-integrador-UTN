@@ -1,0 +1,28 @@
+<div class="container-xxl ">
+    <p class="text-center fs-4 fst-italic font-monospace "> CLAVE Y CONTRASEÑA PARA ACCEDER A LISTA DE BENEFICIOS
+       </p>
+</div>
+<div class="container-fluid">
+    <form action="/admin/login" method="post">
+        <div class="form-floating mb-4 w-50 start-50 translate-middle-x ">
+
+            <input type="usuario" class="form-control" id="usuario" placeholder="usuario" name="usuario">
+            <label for="usuario">USUARIO</label>
+        </div>
+        <div class="form-floating mb-4 w-50 start-50 translate-middle-x ">
+            <input type="password" class="form-control" id="password" placeholder="Password" name="password">
+            <label for="Password">CLAVE</label>
+        </div>
+
+        <div class="d-grid gap-2 col-6 mx-auto mb-4">
+            <button class=" btn btn-dark" type="submit">ENVIAR</button>
+
+        </div>
+
+
+    </form>
+
+    {{#if error}}
+    <p>Usuario o contraseña inexistentes</p>
+    {{/if}}
+</div>

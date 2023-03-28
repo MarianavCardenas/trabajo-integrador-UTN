@@ -1,0 +1,128 @@
+h5 {
+    font-family: 'Alfa Slab One', cursiva;
+    text-align: center;
+    background: fixed;
+}
+
+
+
+.navbar-text {
+    font-size: large;
+    text-align: center;
+    font-family: 'Open Sans', sans-serif;
+
+
+
+}
+
+
+.form-control {
+    margin-right: 300px;
+    padding-right: 150px;
+  
+    
+
+}
+
+.d-flex {
+    position: absolute;
+    left: 500px;
+}
+
+.btn {
+    font-family: 'Open Sans', sans-serif;
+}
+
+footer {
+    background-color: rgb(203, 166, 166);
+}
+
+.hero {
+    background: url(../images/foto1-2.jpg) no-repeat;
+    background-size: 99.1%;
+    height: 45vh;
+    min-height: 400px;
+    color: white;
+}
+
+h1 {
+    font-family: 'Alfa Slab One', cursiva;
+    font-size: 500%;
+    color: white;
+}
+
+.nav-link {
+    color: white;
+}
+
+.dropdown-toggle:hover {
+    color: aliceblue;
+}
+
+.nav-link:hover {
+    color: white;
+}
+
+h2 {
+    font-family: 'Alfa Slab One', cursiva;
+    }
+
+
+.lista-novedades li a img {
+    height: 90px;
+    width: 200px;
+    margin-right: 1.2rem;
+    
+}
+
+.lista-novedades {
+    font-family: 'Alfa Slab One', cursiva;
+    margin-left: 20%;
+    height: 400 px;
+    list-style: none;
+}
+
+
+
+.lista-novedades li a {
+    font-family: 'Alfa Salb One' cursive;
+    font-size: 1.2rem;
+    color: #2a1e28;
+}
+
+.lista-novedades li a:hover {
+    color: #e86cc3;
+
+}
+
+.lista-novedades li a:hover img {
+     margin-right: 0.9rem;
+
+}
+
+.testimonios {
+    background-color: #fda5ea;
+    width: 270px;
+    height: 170px;
+    margin-left: 60%;
+}
+
+.testimonio {
+    text-align: center;
+    padding-top: 20%;
+    padding-bottom: 20%;
+    margin-bottom: 80%;
+}
+
+
+.container-fluid{
+    background:url(../images/foto3.png);
+}
+
+iframe{
+    width: 100%;
+    aspect-ratio: 1.2;
+}
+.btn{
+    color: rgb(235, 235, 235);
+}
